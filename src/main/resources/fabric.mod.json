@@ -1,0 +1,22 @@
+{
+  "schemaVersion": 1,
+  "id": "beaconbeamtoggle",
+  "version": "${version}",
+  "name": "Beacon Beam Toggle",
+  "description": "Toggle beacon beam rendering on and off (client side). Default key: B, or /beaconbeams [on|off|toggle].",
+  "authors": ["Floyd79"],
+  "environment": "client",
+  "entrypoints": {
+    "client": [
+      "com.divinitysreach.beaconbeamtoggle.BeaconBeamToggleClient"
+    ]
+  },
+  "mixins": [
+    "beaconbeamtoggle.mixins.json"
+  ],
+  "depends": {
+    "fabricloader": ">=0.20.1",
+    "minecraft": "26.3",
+    "fabric-api": "*"
+  }
+}
